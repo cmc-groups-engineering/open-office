@@ -150,59 +150,59 @@
                     
                     <div>
                         <label class="block text-sm font-semibold text-charcoal mb-2">Full Name</label>
-                        <input type="text" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" required>
+                        <input name="fullName" id="fullName" type="text" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" required>
                     </div>
 
                     <div>
                         <label class="block text-sm font-semibold text-charcoal mb-2">Mobile Number</label>
-                        <input type="tel" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" required>
+                        <input name="mobileNumber" id="mobileNumber" type="tel" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" required>
                     </div>
 
                     <div>
                         <label class="block text-sm font-semibold text-charcoal mb-2">Email Address</label>
-                        <input type="email" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" required>
+                        <input name="email" id="email" type="email" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" required>
                     </div>
 
                     <div>
                         <label class="block text-sm font-semibold text-charcoal mb-2">Best Way to Reach You</label>
-                        <select class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary">
-                            <option>Text Message</option>
-                            <option>Phone Call</option>
-                            <option>Email</option>
+                        <select name="contactPreference" id="contactPreference" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" required>
+                            <option value="Text Message">Text Message</option>
+                            <option value="Phone Call">Phone Call</option>
+                            <option value="Email">Email</option>
                         </select>
                     </div>
 
                     <div>
                         <label class="block text-sm font-semibold text-charcoal mb-2">Best Time For Us To Reach Out</label>
-                        <select class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary">
-                            <option>Mornings</option>
-                            <option>Afternoons</option>
-                            <option>Evenings</option>
+                        <select name="contactTime" id="contactTime" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" required>
+                            <option value="Mornings">Mornings</option>
+                            <option value="Afternoons">Afternoons</option>
+                            <option value="Evenings">Evenings</option>
                         </select>
                     </div>
 
                     <div>
                         <label class="block text-sm font-semibold text-charcoal mb-2">How Soon Are You Looking to Start Something New?</label>
-                        <select class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary">
-                            <option>Right away</option>
-                            <option>Within 30 days</option>
-                            <option>Just exploring</option>
+                        <select name="startTimeline" id="startTimeline" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" required>
+                            <option value="Right away">Right away</option>
+                            <option value="Within 30 days">Within 30 days</option>
+                            <option value="Just exploring">Just exploring</option>
                         </select>
                     </div>
 
                     <div>
                         <label class="block text-sm font-semibold text-charcoal mb-2">Current Occupation</label>
-                        <input type="text" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary">
+                        <input name="occupation" id="occupation" type="text" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary">
                     </div>
 
                     <div>
                         <label class="block text-sm font-semibold text-charcoal mb-2">Past Sales Experience</label>
-                        <input type="text" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary">
+                        <input name="salesExperience" id="salesExperience" type="text" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary">
                     </div>
 
                     <div>
                         <label class="block text-sm font-semibold text-charcoal mb-2">How Did You Hear About CMC?</label>
-                        <select class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary">
+                        <select name="referralSource" id="referralSource" class="w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" required>
                             <option value="">Select an option</option>
                             <option>Instagram</option>
                             <option>Facebook</option>
@@ -217,13 +217,14 @@
                     </div>
 
                     <div class="flex items-start gap-2.5">
-                        <input type="checkbox" id="consent" class="mt-1" required>
+                        <input type="checkbox" id="consent" name="consent" class="mt-1" required>
                         <label for="consent" class="text-sm text-muted">I agree to be contacted by CMC by phone, text, or email regarding this opportunity.</label>
                     </div>
 
                     <button type="submit" class="w-full bg-primary text-white font-semibold px-6 py-4 rounded-md hover:bg-[#0082ba] transition-colors text-lg mt-3">
                         Submit & Schedule My Visit
                     </button>
+                    <p id="submission-error" class="text-sm text-secondary mt-2 hidden">Something went wrong. Please try again or reach us directly.</p>
 
                 </form>
             </div>
@@ -296,23 +297,61 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
-        
-        // Handle form submission
-        document.getElementById('registration-form').addEventListener('submit', function(e) {
+
+        // Replace with your deployed Google Apps Script Web App URL
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwavNaPWISNJCylydQh8ayxiweJY8gyXim1jRSKAAFZnWaG5C_KAxH9mpHryYcdPo-I4w/exec';
+
+        const form = document.getElementById('registration-form');
+        const formContainer = document.getElementById('form-container');
+        const successScreen = document.getElementById('success-screen');
+        const errorMessage = document.getElementById('submission-error');
+        const submitButton = form.querySelector('button[type="submit"]');
+
+        form.addEventListener('submit', async function(e) {
             e.preventDefault();
-            
-            // Hide form container
-            document.getElementById('form-container').style.display = 'none';
-            
-            // Show success screen
-            document.getElementById('success-screen').style.display = 'block';
-            
-            // Scroll to success screen
-            document.getElementById('success-screen').scrollIntoView({ behavior: 'smooth', block: 'center' });
-            
-            // Here you would typically send the form data to your backend
-            // const formData = new FormData(this);
-            // fetch('/api/submit', { method: 'POST', body: formData });
+            errorMessage.classList.add('hidden');
+            submitButton.disabled = true;
+            submitButton.textContent = 'Submitting...';
+
+            const formData = new FormData(form);
+            const payload = Object.fromEntries(formData.entries());
+            payload.consent = document.getElementById('consent').checked;
+
+            // Use URL-encoded payload to avoid preflight CORS checks
+            const body = new URLSearchParams();
+            Object.entries(payload).forEach(([key, value]) => {
+                body.append(key, value);
+            });
+
+            try {
+                const response = await fetch(scriptURL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body,
+                });
+
+                // Treat opaque/redirect responses as success since Apps Script often returns 302/opaque
+                if (
+                    response.ok ||
+                    response.status === 0 ||
+                    response.status === 302 ||
+                    response.type === 'opaqueredirect' ||
+                    response.type === 'opaque'
+                ) {
+                    formContainer.style.display = 'none';
+                    successScreen.style.display = 'block';
+                    successScreen.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    form.reset();
+                } else {
+                    throw new Error(`Unexpected status: ${response.status}`);
+                }
+            } catch (err) {
+                console.error('Submission error:', err);
+                errorMessage.classList.remove('hidden');
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit & Schedule My Visit';
+            }
         });
     </script>
 
